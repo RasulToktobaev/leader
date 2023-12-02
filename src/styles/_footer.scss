@@ -1,0 +1,59 @@
+.footer{
+  width: 1381px;
+  height: 417px;
+  background: #202020;
+  position: relative;
+
+  &__content{
+    display: flex;
+    justify-content: space-between;
+    &-left{
+      padding: 97px 0 130px 120px;
+      display: flex;
+      flex-direction: column;
+      row-gap: 21px;
+    }
+    &-right{
+      padding: 93px 181px 115px 0;
+    }
+    &-desc{
+      color: #FFF;
+      font-family: Montserrat, sans-serif;
+      padding-bottom: 20px;
+      font-size: 16px;
+    }
+    &-desc-two{
+      color: #FFF;
+      padding-bottom: 38px;
+      font-family: Montserrat, sans-serif;
+      font-size: 24px;
+
+    }
+    &-btn{
+      @extend %buttonGradient;
+      color: #000;
+      font-family: Gotham Pro, sans-serif;
+      font-size: 22px;
+      font-style: normal;
+      padding: 18px 40px;
+    }
+  }
+  &__block{
+    display: flex;
+    &-title{
+      color: white;
+      font-size: 18px;
+      position: absolute;
+      top: 30%;
+      left: 15%;
+
+    }
+    &-desc{
+      color: #FFF;
+      font-family: Montserrat, sans-serif;
+      font-size: 16px;
+      line-height: 150%;
+      text-decoration-line: underline;
+    }
+  }
+}
